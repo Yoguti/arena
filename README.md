@@ -13,6 +13,7 @@ This is a **single-header library** to make integration effortless. There are no
 ├── examples/       # Sample code showing how to use it
 ├── tests/          # Unit tests to make sure it works
 └── bin/            # Where the compiled binaries go
+```
 
 ## Integration
 
@@ -22,6 +23,7 @@ This is a **single-header library** to make integration effortless. There are no
 ```c
 #define ARENA_IMPLEMENTATION
 #include "arena.h"
+```
 
 3. In all other files, just `#include "arena.h"`.
 
@@ -40,6 +42,7 @@ arena_reset(mem);
 
 // 4. Teardown (frees all memory blocks at once)
 arena_free(mem);
+```
 
 ## Building & Testing
 
@@ -49,3 +52,4 @@ The project comes with a `Makefile` to build the included tests and examples.
 make        # Compiles examples and tests to ./bin
 make test   # Compiles and runs the test suite immediately
 make clean  # Removes the ./bin directory
+```
