@@ -1,6 +1,6 @@
 # Simple Arena Allocator
 
-A lightweight, drop-in memory arena for C99.
+memory arena for C99.
 
 This is a **single-header library** to make integration effortless. There are no build flags to configure and no libraries to link—just copy the file into your source tree and you're done. It's perfect for systems where you need fast, grouped allocations (like game frames or compiler passes) without the overhead of tracking individual `malloc`/`free` calls.
 
